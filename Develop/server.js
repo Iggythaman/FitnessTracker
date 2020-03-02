@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useUnifiedTopology: true
 });
 // ROUTES
-//app.use(require(".routes/api.js"));
+app.use(require("./routes/backEndRoutes.js"));
 app.use(require("./routes/htmlRoutes.js"));
 
 //Start the Server
